@@ -4,8 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/connection/Mysql.java</file>
-            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/dialog/AddBrand.java</file>
-            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/dialog/AddSupplierDialog.java</file>
+            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/SplashScreen.java</file>
+            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/Logger/LMS_Logger.java</file>
+            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/Report/Stock_Report.jasper</file>
+            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/HomeScreen.java</file>
+            <file>file:/C:/Users/MB/Documents/NetBeansProjects/Inventiry%20Managment%20System/src/lk/LMS/com/gui/LoginScreen.java</file>
         </group>
     </open-files>
 </project-private>

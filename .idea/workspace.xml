@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Inventiry Managment System:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b3eb4ca-6f96-4926-963e-9c9e9b832aa1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lk/LMS/com/img/histroy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lk/LMS/com/img/none.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1751218828505_photo_2025-05-02_22-16-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752121518428_images.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752122550077_v1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752156589909_strawberry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752161771720_R.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752306234966_w.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752330444805_e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752332872134_v.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752333755421_wb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752334781358_7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752338252470_c.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752389466257_cc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752390393738_g.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752926088890_s.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752940049238_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752988280197_o.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pimg/1752989743029_o.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/itext-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/itext-2.1.7.js4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/itext-asian-5.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/itext-asian-5.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/itextpdf-5.5.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report_supplier.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/Logger/LMS_Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/Logger/LMS_Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/BuyNow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/BuyNow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/BuyNow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/BuyNow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/UserActiveDeactive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/UserActiveDeactive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/supplierActiveDeactive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/supplierActiveDeactive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/updateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/dialog/updateProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/panel/productCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/panel/productCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/gui/util/AppIconUtill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/gui/util/AppIconUtill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lk/LMS/com/validation/validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lk/LMS/com/validation/validator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;thenujaya-mihisara&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/thenujaya-mihisara/InventiryManagmentSystem.git&quot;,
+    &quot;accountId&quot;: &quot;89e4ef38-15f8-44cf-ab49-7506f8b0cad3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3FQykR1TXRJaZlHlbl5lC2tJX2r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HomeScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LoginScreen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SplashScreen.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in Inventiry Managment System.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ProductValidatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserValidateTest.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MB/Documents/NetBeansProjects/Inventiry Managment System/src/lk/LMS/com/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MB\Documents\NetBeansProjects\Inventiry Managment System\src\lk\LMS\com\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Inventiry Managment System">
+    <configuration name="All in Inventiry Managment System" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventiry Managment System" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventiry Managment System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.LMS.com.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.LMS.com.validation" />
+      <option name="MAIN_CLASS_NAME" value="lk.LMS.com.validation.ProductValidatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserValidateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Inventiry Managment System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.LMS.com.validation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lk.LMS.com.validation" />
+      <option name="MAIN_CLASS_NAME" value="lk.LMS.com.validation.UserValidateTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in Inventiry Managment System" />
+        <item itemvalue="JUnit.UserValidateTest" />
+        <item itemvalue="JUnit.ProductValidatorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b3eb4ca-6f96-4926-963e-9c9e9b832aa1" name="Changes" comment="" />
+      <created>1782021729822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782021729822</updated>
+      <workItem from="1782021731166" duration="1544000" />
+      <workItem from="1782040654479" duration="201000" />
+      <workItem from="1782040869282" duration="1414000" />
+      <workItem from="1782042416053" duration="5285000" />
+      <workItem from="1782114020068" duration="4732000" />
+      <workItem from="1782119754993" duration="978000" />
+      <workItem from="1782121026083" duration="222000" />
+      <workItem from="1782122065239" duration="237000" />
+      <workItem from="1782122320327" duration="422000" />
+      <workItem from="1782122761355" duration="192000" />
+      <workItem from="1782122970316" duration="12570000" />
+      <workItem from="1782450573855" duration="83000" />
+      <workItem from="1782536311914" duration="1613000" />
+      <workItem from="1782572074513" duration="150000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

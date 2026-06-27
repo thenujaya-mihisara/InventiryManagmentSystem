@@ -1,217 +1,172 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
+ * Decompiled with CFR 0.152.
  */
 package lk.LMS.com.gui.dialog;
 
-import java.util.HashMap;
-import javax.swing.DefaultListModel;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
+import javax.swing.AbstractListModel;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultListModel;
+import javax.swing.GroupLayout;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.LayoutStyle;
+import javax.swing.ListModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import lk.LMS.com.gui.connection.Mysql;
 import lk.LMS.com.gui.util.AppIconUtill;
 
-/**
- *
- * @author MB
- */
+public class supplierActiveDeactive
+extends JDialog {
+    private JTable supplierTable;
+    private HashMap<String, Integer> supplierMap = new HashMap();
+    private int selectedSupId = 0;
+    private JRadioButton Active;
+    private JRadioButton Deactive;
+    private ButtonGroup buttonGroup1;
+    private JButton jButton1;
+    private JLabel jLabel1;
+    private JList<String> jList1;
+    private JPanel jPanel1;
+    private JScrollPane jScrollPane1;
 
-public class supplierActiveDeactive extends javax.swing.JDialog {
-private JTable supplierTable;
-    /**
-     * Creates new form supplierActiveDeactive
-     */
-    public supplierActiveDeactive(java.awt.Frame parent, boolean modal, JTable table) {
+    public supplierActiveDeactive(Frame parent, boolean modal, JTable table) {
         super(parent, modal);
-        initComponents();
-         this.supplierTable = table;
-        loadSupplierList();
-        
+        this.initComponents();
+        this.supplierTable = table;
+        this.loadSupplierList();
     }
-    private HashMap<String, Integer> supplierMap = new HashMap<>();
 
     private void loadSupplierList() {
         try {
             ResultSet rs = Mysql.excute("SELECT * FROM `suppliers` ORDER BY name DESC");
-
-            DefaultListModel<String> model = new DefaultListModel<>();
-            supplierMap.clear();
-
+            DefaultListModel<String> model = new DefaultListModel<String>();
+            this.supplierMap.clear();
             while (rs.next()) {
                 int supid = rs.getInt("supid");
                 String name = rs.getString("name");
-
                 model.addElement(name);
-                supplierMap.put(name, supid);
+                this.supplierMap.put(name, supid);
             }
-
-            jList1.setModel(model);
-
-        } catch (SQLException e) {
+            this.jList1.setModel(model);
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-    private int selectedSupId = 0;
 
     private void loadSupplierStatus(int supid) {
         try {
             ResultSet rs = Mysql.excute("SELECT `status_sid` FROM suppliers WHERE supid = '" + supid + "'");
             if (rs.next()) {
-                selectedSupId = supid;
+                this.selectedSupId = supid;
                 int status = rs.getInt("status_sid");
-
                 if (status == 1) {
-                    Active.setSelected(true);
+                    this.Active.setSelected(true);
                 } else if (status == 2) {
-                    Deactive.setSelected(true);
+                    this.Deactive.setSelected(true);
                 }
             }
-        } catch (SQLException e) {
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     private void SaveStatus() {
-        int newStatus = Active.isSelected() ? 1 : 2;
-
+        int newStatus = this.Active.isSelected() ? 1 : 2;
         try {
-            Mysql.excute("UPDATE `suppliers` SET `status_sid` = '" + newStatus + "' WHERE supid = '" + selectedSupId + "'");
+            Mysql.excute("UPDATE `suppliers` SET `status_sid` = '" + newStatus + "' WHERE supid = '" + this.selectedSupId + "'");
             JOptionPane.showMessageDialog(this, "Supplier status updated successfully.");
-            loadSupplierStatus(selectedSupId);
-            AppIconUtill.TableUtils.refreshTable(supplierTable, "SELECT * FROM suppliers ORDER BY supid DESC", 4);
-            dispose();
-        } catch (SQLException e) {
+            this.loadSupplierStatus(this.selectedSupId);
+            AppIconUtill.TableUtils.refreshTable(this.supplierTable, "SELECT * FROM suppliers ORDER BY supid DESC", 4);
+            this.dispose();
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        this.buttonGroup1 = new ButtonGroup();
+        this.jPanel1 = new JPanel();
+        this.jScrollPane1 = new JScrollPane();
+        this.jList1 = new JList();
+        this.Active = new JRadioButton();
+        this.Deactive = new JRadioButton();
+        this.jButton1 = new JButton();
+        this.jLabel1 = new JLabel();
+        this.setDefaultCloseOperation(2);
+        this.setResizable(false);
+        this.jList1.setModel((ListModel<String>)new AbstractListModel<String>(){
+            String[] strings = new String[]{"Item 1", "Item 2", "Item 3", "Item 4", "Item 5"};
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        Active = new javax.swing.JRadioButton();
-        Deactive = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+            @Override
+            public int getSize() {
+                return this.strings.length;
+            }
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setResizable(false);
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
-            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
-                jList1ValueChanged(evt);
+            @Override
+            public String getElementAt(int i) {
+                return this.strings[i];
             }
         });
-        jScrollPane1.setViewportView(jList1);
+        this.jList1.addListSelectionListener(new ListSelectionListener(){
 
-        buttonGroup1.add(Active);
-        Active.setText("Active");
-
-        buttonGroup1.add(Deactive);
-        Deactive.setText("Deactive");
-
-        jButton1.setText("SAVE");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+            @Override
+            public void valueChanged(ListSelectionEvent evt) {
+                supplierActiveDeactive.this.jList1ValueChanged(evt);
             }
         });
+        this.jScrollPane1.setViewportView(this.jList1);
+        this.buttonGroup1.add(this.Active);
+        this.Active.setText("Active");
+        this.buttonGroup1.add(this.Deactive);
+        this.Deactive.setText("Deactive");
+        this.jButton1.setText("SAVE");
+        this.jButton1.addActionListener(new ActionListener(){
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
-        jLabel1.setText("Select supplier status");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(Active)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Deactive)
-                .addGap(44, 44, 44))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(130, 130, 130)
-                        .addComponent(jButton1))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Deactive)
-                    .addComponent(Active))
-                .addGap(32, 32, 32)
-                .addComponent(jButton1)
-                .addGap(30, 30, 30))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        SaveStatus();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
-        // TODO add your handling code here:
-        if (!evt.getValueIsAdjusting()) {
-            String selectedName = jList1.getSelectedValue();
-            if (selectedName != null) {
-                int supid = supplierMap.get(selectedName);
-                loadSupplierStatus(supid);
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                supplierActiveDeactive.this.jButton1ActionPerformed(evt);
             }
+        });
+        this.jLabel1.setFont(new Font("Yu Gothic UI Semibold", 1, 24));
+        this.jLabel1.setText("Select supplier status");
+        GroupLayout jPanel1Layout = new GroupLayout(this.jPanel1);
+        this.jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup().addGap(28, 28, 28).addComponent(this.Active).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, -1, Short.MAX_VALUE).addComponent(this.Deactive).addGap(44, 44, 44)).addGroup(jPanel1Layout.createSequentialGroup().addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addGap(130, 130, 130).addComponent(this.jButton1)).addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(this.jLabel1, -2, 272, -2)).addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(this.jScrollPane1, -2, 320, -2))).addContainerGap(-1, Short.MAX_VALUE)));
+        jPanel1Layout.setVerticalGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(jPanel1Layout.createSequentialGroup().addContainerGap().addComponent(this.jLabel1, -2, 38, -2).addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED).addComponent(this.jScrollPane1, -1, 195, Short.MAX_VALUE).addGap(18, 18, 18).addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(this.Deactive).addComponent(this.Active)).addGap(32, 32, 32).addComponent(this.jButton1).addGap(30, 30, 30)));
+        GroupLayout layout = new GroupLayout(this.getContentPane());
+        this.getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(this.jPanel1, -1, -1, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addComponent(this.jPanel1, -1, -1, Short.MAX_VALUE));
+        this.pack();
+    }
+
+    private void jButton1ActionPerformed(ActionEvent evt) {
+        this.SaveStatus();
+    }
+
+    private void jList1ValueChanged(ListSelectionEvent evt) {
+        String selectedName;
+        if (!evt.getValueIsAdjusting() && (selectedName = this.jList1.getSelectedValue()) != null) {
+            int supid = this.supplierMap.get(selectedName);
+            this.loadSupplierStatus(supid);
         }
-    }//GEN-LAST:event_jList1ValueChanged
-
-    
-    
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton Active;
-    private javax.swing.JRadioButton Deactive;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    // End of variables declaration//GEN-END:variables
+    }
 }

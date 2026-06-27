@@ -5,17 +5,22 @@
 package lk.LMS.com.gui.dialog;
 
 import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Vector;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import lk.LMS.com.gui.HomeScreen;
 import lk.LMS.com.gui.Logger.LMS_Logger;
 import lk.LMS.com.gui.connection.Mysql;
@@ -33,6 +38,10 @@ public class updateProduct extends javax.swing.JDialog {
     private HashMap<String, Integer> supplierMap = new HashMap<>();
     private String productId;
     private HomeScreen homeScreen;
+    private String selectedImagePath = null;
+    private javax.swing.JLabel imagePreviewLabel;
+    private javax.swing.JButton browseImageButton;
+    private javax.swing.JTextField imagePathField;
 
     public updateProduct(java.awt.Frame parent, boolean modal, String productId, JTable table, HomeScreen screen) {
         super(parent, modal);
@@ -58,13 +67,55 @@ public class updateProduct extends javax.swing.JDialog {
         Image image = deleteIcon.getImage().getScaledInstance(24, 24, Image.SCALE_SMOOTH);
         delete.setIcon(new ImageIcon(image));
 
+        // --- Image Panel (added programmatically) ---
+        imagePreviewLabel = new javax.swing.JLabel("No Image", javax.swing.JLabel.CENTER);
+        imagePreviewLabel.setPreferredSize(new java.awt.Dimension(200, 180));
+        imagePreviewLabel.setBorder(javax.swing.BorderFactory.createLineBorder(java.awt.Color.LIGHT_GRAY, 1));
+        imagePreviewLabel.setBackground(new java.awt.Color(245, 245, 245));
+        imagePreviewLabel.setOpaque(true);
+        imagePreviewLabel.setFont(new java.awt.Font("Segoe UI", java.awt.Font.ITALIC, 12));
+        imagePreviewLabel.setForeground(java.awt.Color.GRAY);
+
+        imagePathField = new javax.swing.JTextField();
+        imagePathField.setEditable(false);
+        imagePathField.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 11));
+        imagePathField.setPreferredSize(new java.awt.Dimension(350, 28));
+
+        browseImageButton = new javax.swing.JButton("Browse Image");
+        browseImageButton.setBackground(new java.awt.Color(79, 70, 229));
+        browseImageButton.setForeground(java.awt.Color.WHITE);
+        browseImageButton.setFocusPainted(false);
+        browseImageButton.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12));
+        browseImageButton.setCursor(java.awt.Cursor.getPredefinedCursor(java.awt.Cursor.HAND_CURSOR));
+        browseImageButton.addActionListener(e -> browseImage());
+
+        javax.swing.JPanel browseRow = new javax.swing.JPanel(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
+        browseRow.setOpaque(false);
+        browseRow.add(imagePathField);
+        browseRow.add(browseImageButton);
+
+        javax.swing.JPanel imageSection = new javax.swing.JPanel();
+        imageSection.setLayout(new java.awt.BorderLayout(5, 8));
+        imageSection.setBorder(javax.swing.BorderFactory.createTitledBorder(
+                javax.swing.BorderFactory.createLineBorder(new java.awt.Color(200, 200, 200)),
+                "Product Image",
+                javax.swing.border.TitledBorder.LEFT,
+                javax.swing.border.TitledBorder.TOP,
+                new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 12)));
+        imageSection.add(browseRow, java.awt.BorderLayout.NORTH);
+        imageSection.add(imagePreviewLabel, java.awt.BorderLayout.CENTER);
+
+        // Re-layout dialog to fit image panel on the right
+        getContentPane().setLayout(new java.awt.BorderLayout(10, 0));
+        getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
+        getContentPane().add(imageSection, java.awt.BorderLayout.EAST);
+        pack();
     }
 
     private void loadProduct() {
 
         try {
-            ResultSet rs1 = Mysql.excute("SELECT * FROM `product` WHERE `product`.`pid` = '" + productId + "' "
-            );
+            ResultSet rs1 = Mysql.excute("SELECT * FROM `product` WHERE `product`.`pid` = '" + productId + "' ");
             while (rs1.next()) {
                 String name = rs1.getString("product.name");
                 prNameInput.setText(name);
@@ -82,6 +133,16 @@ public class updateProduct extends javax.swing.JDialog {
 
                 prQty.setText(String.valueOf(qty));
                 prPrice.setText(String.valueOf(price));
+            }
+
+            // Load existing product image
+            ResultSet rsImg = Mysql.excute("SELECT `path` FROM `product_image` WHERE `product_id` = '" + productId + "'");
+            if (rsImg.next()) {
+                String existingPath = rsImg.getString("path");
+                if (existingPath != null && !existingPath.isBlank()) {
+                    showImagePreview(existingPath);
+                    imagePathField.setText(existingPath);
+                }
             }
 
             Vector<String> supplier = new Vector();
@@ -151,12 +212,21 @@ public class updateProduct extends javax.swing.JDialog {
 
             }
             Mysql.excute("UPDATE `product` SET `status_sid` = '" + status_sid + "' WHERE `pid` = '" + productId + "'");
+            // Update image if a new one was selected
+            if (selectedImagePath != null && !selectedImagePath.isBlank()) {
+                String escapedPath = selectedImagePath.replace("\\", "\\\\");
+                ResultSet rsImgCheck = Mysql.excute("SELECT `product_id` FROM `product_image` WHERE `product_id` = '" + productId + "'");
+                if (rsImgCheck.next()) {
+                    Mysql.excute("UPDATE `product_image` SET `path` = '" + escapedPath + "' WHERE `product_id` = '" + productId + "'");
+                } else {
+                    Mysql.excute("INSERT INTO `product_image`(`path`, `product_id`) VALUES ('" + escapedPath + "', '" + productId + "')");
+                }
+                logger.info("Product image updated for productId=" + productId);
+            }
             logger.info("Product updated successfully: productId=" + productId);
             JOptionPane.showMessageDialog(this, "Product updated successfully!");
 
-            if (homeScreen != null) {
-                homeScreen.loadproductcard();
-            }
+            refreshProductViews();
 
             dispose();
 
@@ -166,37 +236,80 @@ public class updateProduct extends javax.swing.JDialog {
         } catch (Exception e) {
             logger.severe("Error saving product update for productId " + productId + ": " + e.getMessage());
             e.printStackTrace();
-
+            JOptionPane.showMessageDialog(this, "Error saving product: " + e.getMessage());
         }
 
     }
 
     private void deleteproduct() {
 
-        int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to delete this product?", "Confirm Delete", JOptionPane.YES_NO_OPTION);
+        int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to deactivate this product?", "Confirm Deactivate", JOptionPane.YES_NO_OPTION);
         if (confirm == JOptionPane.YES_OPTION) {
             try {
-                Mysql.excute("DELETE FROM `product_image` WHERE `product_id` = '" + productId + "'");
-                Mysql.excute("DELETE FROM `stock` WHERE `product_pid` = '" + productId + "'");
-                Mysql.excute("DELETE FROM `product` WHERE `pid` = '" + productId + "'");
+                Mysql.excute("UPDATE `product` SET `status_sid` = '2' WHERE `pid` = '" + productId + "'");
 
-                JOptionPane.showMessageDialog(this, "Product deleted successfully.");
+                JOptionPane.showMessageDialog(this, "Product deactivated successfully.");
 
-                if (homeScreen != null) {
-                    homeScreen.loadproductcard();
-                }
-                AppIconUtill.TableUtils.refreshTable(productTable, "SELECT `product`.`pid`, `product`.`name`, `brand`.`name`, `catagory`.`name`, `product`.`discription`"
-                        + "    FROM `product`"
-                        + "    LEFT JOIN `brand` ON `product`.`brand_bid` = `brand`.`bid`"
-                        + "    LEFT JOIN `catagory` ON `product`.`category_cid` = `catagory`.`cid`"
-                        + "    ORDER BY `product`.`pid` DESC", 5);
+                refreshProductViews();
                 dispose();
             } catch (Exception e) {
                 e.printStackTrace();
-                JOptionPane.showMessageDialog(this, "Error deleting product: " + e.getMessage());
+                JOptionPane.showMessageDialog(this, "Error deactivating product: " + e.getMessage());
             }
         }
 
+    }
+
+    private void browseImage() {
+        JFileChooser chooser = new JFileChooser();
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Image files (.png, .jpg, .jpeg)", "png", "jpg", "jpeg");
+        chooser.setFileFilter(filter);
+        int option = chooser.showOpenDialog(this);
+        if (option == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = chooser.getSelectedFile();
+            try {
+                File imageFolder = new File("Pimg");
+                if (!imageFolder.exists()) {
+                    imageFolder.mkdir();
+                }
+                String fileName = System.currentTimeMillis() + "_" + selectedFile.getName();
+                File destination = new File(imageFolder, fileName);
+                Files.copy(selectedFile.toPath(), destination.toPath(), StandardCopyOption.REPLACE_EXISTING);
+                selectedImagePath = destination.getAbsolutePath();
+                imagePathField.setText(selectedImagePath);
+                showImagePreview(selectedImagePath);
+                logger.info("New image selected for productId=" + productId + ": " + selectedImagePath);
+            } catch (IOException e) {
+                logger.severe("Error copying image: " + e.getMessage());
+                JOptionPane.showMessageDialog(this, "Could not copy image file: " + e.getMessage());
+            }
+        }
+    }
+
+    private void showImagePreview(String path) {
+        File imgFile = new File(path);
+        if (imgFile.exists()) {
+            ImageIcon icon = new ImageIcon(path);
+            Image scaled = icon.getImage().getScaledInstance(200, 180, Image.SCALE_SMOOTH);
+            imagePreviewLabel.setIcon(new ImageIcon(scaled));
+            imagePreviewLabel.setText("");
+        } else {
+            imagePreviewLabel.setIcon(null);
+            imagePreviewLabel.setText("Image not found");
+        }
+    }
+
+    private void refreshProductViews() {
+        if (homeScreen != null) {
+            homeScreen.loadproductcard();
+            homeScreen.loadDeactivatedProductCards();
+            homeScreen.loadPurchaseHistory();
+        }
+        AppIconUtill.TableUtils.refreshTable(productTable, "SELECT `product`.`pid`, `product`.`name`, `brand`.`name`, `catagory`.`name`, `product`.`discription`"
+                + "    FROM `product`"
+                + "    LEFT JOIN `brand` ON `product`.`brand_bid` = `brand`.`bid`"
+                + "    LEFT JOIN `catagory` ON `product`.`category_cid` = `catagory`.`cid`"
+                + "    ORDER BY `product`.`pid` DESC", 5);
     }
 
     @SuppressWarnings("unchecked")

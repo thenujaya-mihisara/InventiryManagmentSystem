@@ -1,0 +1,452 @@
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:19:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:19:30 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+INFO: Attempting to add brand: test
+Jun 23, 2026 3:19:32 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+INFO: New brand added successfully: test
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:24:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:25:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:26:49 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 3:28:16 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 9:40:04 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login attempt with email: thenu@gmail.com
+Jun 23, 2026 9:40:07 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+WARNING: Failed login attempt (invalid credentials) for email: thenu@gmail.com
+Jun 23, 2026 9:40:14 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login attempt with email: thenu@gmail.com
+Jun 23, 2026 9:40:16 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login successful for email: thenu@gmail.com
+Jun 23, 2026 9:40:18 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 9:40:18 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 9:40:18 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 9:40:18 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 9:46:51 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login attempt with email: 
+Jun 23, 2026 9:47:04 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login attempt with email: thenu@gmail.com
+Jun 23, 2026 9:47:23 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login attempt with email: thenu@gmail.com
+Jun 23, 2026 9:47:26 PM lk.LMS.com.gui.LoginScreen jButton1ActionPerformed
+INFO: Login successful for email: thenu@gmail.com
+Jun 23, 2026 9:47:26 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 9:47:26 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 9:47:26 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 9:47:26 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 9:49:19 PM lk.LMS.com.gui.HomeScreen jButton1ActionPerformed
+INFO: Add Product Dialog opened
+Jun 23, 2026 9:49:53 PM lk.LMS.com.gui.HomeScreen jButton7ActionPerformed
+INFO: Add Brand Dialog opened
+Jun 23, 2026 9:50:33 PM lk.LMS.com.gui.HomeScreen jButton1ActionPerformed
+INFO: Add Product Dialog opened
+Jun 23, 2026 9:52:30 PM lk.LMS.com.gui.dialog.addProduct insertProduct
+INFO: Product added successfully: seven Up
+Jun 23, 2026 9:52:33 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=0, price=0.0
+Jun 23, 2026 9:52:33 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 9:52:33 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 9:53:31 PM lk.LMS.com.gui.HomeScreen jButton9ActionPerformed
+INFO: User Active/Deactivate Dialog opened
+Jun 23, 2026 9:53:43 PM lk.LMS.com.gui.HomeScreen jButton9ActionPerformed
+INFO: User Active/Deactivate Dialog opened
+Jun 23, 2026 9:54:03 PM lk.LMS.com.gui.HomeScreen jButton4ActionPerformed
+INFO: user Report generated successfully.
+Jun 23, 2026 9:54:46 PM lk.LMS.com.gui.HomeScreen jButton4ActionPerformed
+INFO: user Report generated successfully.
+Jun 23, 2026 9:55:55 PM lk.LMS.com.gui.HomeScreen jButton4ActionPerformed
+INFO: user Report generated successfully.
+Jun 23, 2026 9:57:05 PM lk.LMS.com.gui.HomeScreen jButton8ActionPerformed
+INFO: Supplier Active/Deactivate Dialog opened
+Jun 23, 2026 9:57:42 PM lk.LMS.com.gui.HomeScreen jButton5ActionPerformed
+INFO: supplier Report generated successfully.
+Jun 23, 2026 9:59:37 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 9:59:54 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=39, qty=50, price=500, supplier=mahinda, status=1
+Jun 23, 2026 9:59:54 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=39
+Jun 23, 2026 9:59:55 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=50, price=500.0
+Jun 23, 2026 9:59:55 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 9:59:55 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 9:59:55 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 9:59:55 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 9:59:59 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 10:00:04 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=39, qty=50, price=500.0, supplier=mahinda, status=0
+Jun 23, 2026 10:00:04 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=39
+Jun 23, 2026 10:00:05 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:00:05 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:00:05 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=50, price=500.0
+Jun 23, 2026 10:00:05 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:00:05 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:00:12 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 10:00:17 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=39, qty=50, price=500.0, supplier=mahinda, status=1
+Jun 23, 2026 10:00:17 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=39
+Jun 23, 2026 10:00:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=50, price=500.0
+Jun 23, 2026 10:00:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:00:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:00:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:00:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:00:21 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 10:00:38 PM lk.LMS.com.gui.dialog.updateProduct browseImage
+INFO: New image selected for productId=39: C:\Users\MB\Documents\NetBeansProjects\Inventiry Managment System\Pimg\1782232238710_1752156589909_strawberry.png
+Jun 23, 2026 10:00:39 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=39, qty=50, price=500.0, supplier=mahinda, status=1
+Jun 23, 2026 10:00:39 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product image updated for productId=39
+Jun 23, 2026 10:00:39 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=39
+Jun 23, 2026 10:00:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=50, price=500.0
+Jun 23, 2026 10:00:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:00:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:00:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:00:40 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:01:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:01:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:01:19 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:01:48 PM lk.LMS.com.gui.HomeScreen generatePurchaseHistoryReport
+INFO: Purchase history report generated successfully.
+Jun 23, 2026 10:06:39 PM lk.LMS.com.gui.HomeScreen jButton2ActionPerformed
+INFO: Stock report generated successfully.
+Jun 23, 2026 10:10:11 PM lk.LMS.com.gui.HomeScreen$3 done
+INFO: Database backup completed successfully:
+C:\Users\MB\Desktop\12sql.sql
+Jun 23, 2026 10:10:14 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:10:14 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:10:14 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:10:14 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:10:14 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:10:18 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 10:10:23 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:10:23 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:10:23 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:10:23 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:10:23 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:10:51 PM lk.LMS.com.gui.HomeScreen$3 done
+INFO: Database restore completed successfully.
+Jun 23, 2026 10:10:52 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:10:52 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:10:52 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:10:52 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:10:52 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:15:41 PM lk.LMS.com.gui.HomeScreen$3 done
+INFO: Database backup completed successfully:
+C:\Users\MB\Desktop\inventorymanagmentsystem_backup_20260623_221535.sql
+Jun 23, 2026 10:15:43 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:15:43 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:15:43 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:15:43 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:15:43 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:15:45 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 39
+Jun 23, 2026 10:15:48 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:15:48 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:15:48 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:15:48 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:15:48 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:15:59 PM lk.LMS.com.gui.HomeScreen$3 done
+INFO: Database restore completed successfully.
+Jun 23, 2026 10:16:00 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:16:00 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:16:00 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:16:00 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:16:00 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:48:42 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=39, name=seven Up, qty=47, price=500.0
+Jun 23, 2026 10:48:42 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:48:42 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:48:42 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:48:42 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:50:37 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=25, price=500.0
+Jun 23, 2026 10:50:37 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 10:50:37 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 10:50:37 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 10:52:37 PM lk.LMS.com.gui.HomeScreen jButton1ActionPerformed
+INFO: Add Product Dialog opened
+Jun 23, 2026 10:53:24 PM lk.LMS.com.gui.HomeScreen jButton7ActionPerformed
+INFO: Add Brand Dialog opened
+Jun 23, 2026 10:53:42 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+INFO: Attempting to add brand: test
+Jun 23, 2026 10:53:44 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+WARNING: Brand already exists: test
+Jun 23, 2026 10:53:47 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+INFO: Attempting to add brand: test25
+Jun 23, 2026 10:53:48 PM lk.LMS.com.gui.dialog.AddBrand addbrand
+INFO: New brand added successfully: test25
+Jun 23, 2026 10:53:50 PM lk.LMS.com.gui.HomeScreen jButton1ActionPerformed
+INFO: Add Product Dialog opened
+Jun 23, 2026 11:09:04 PM lk.LMS.com.gui.HomeScreen jButton9ActionPerformed
+INFO: User Active/Deactivate Dialog opened
+Jun 23, 2026 11:09:19 PM lk.LMS.com.gui.HomeScreen jButton9ActionPerformed
+INFO: User Active/Deactivate Dialog opened
+Jun 23, 2026 11:09:42 PM lk.LMS.com.gui.HomeScreen jButton4ActionPerformed
+INFO: user Report generated successfully.
+Jun 23, 2026 11:09:52 PM lk.LMS.com.gui.HomeScreen jButton3ActionPerformed
+INFO: Add User Dialog opened
+Jun 23, 2026 11:14:16 PM lk.LMS.com.gui.HomeScreen jButton5ActionPerformed
+INFO: supplier Report generated successfully.
+Jun 23, 2026 11:14:35 PM lk.LMS.com.gui.HomeScreen jButton6ActionPerformed
+INFO: Add Supplier Dialog opened
+Jun 23, 2026 11:14:42 PM lk.LMS.com.gui.HomeScreen jButton8ActionPerformed
+INFO: Supplier Active/Deactivate Dialog opened
+Jun 23, 2026 11:15:10 PM lk.LMS.com.gui.HomeScreen jButton5ActionPerformed
+INFO: supplier Report generated successfully.
+Jun 23, 2026 11:15:44 PM lk.LMS.com.gui.HomeScreen jButton6ActionPerformed
+INFO: Add Supplier Dialog opened
+Jun 23, 2026 11:15:52 PM lk.LMS.com.gui.HomeScreen jButton8ActionPerformed
+INFO: Supplier Active/Deactivate Dialog opened
+Jun 23, 2026 11:16:07 PM lk.LMS.com.gui.HomeScreen jButton5ActionPerformed
+INFO: supplier Report generated successfully.
+Jun 23, 2026 11:20:22 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 38
+Jun 23, 2026 11:20:45 PM lk.LMS.com.gui.dialog.updateProduct browseImage
+INFO: New image selected for productId=38: C:\Users\MB\Documents\NetBeansProjects\Inventiry Managment System\Pimg\1782237045439_1752122550077_v1.jpeg
+Jun 23, 2026 11:20:52 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=38, qty=20, price=500.0, supplier=ranil, status=1
+Jun 23, 2026 11:20:52 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product image updated for productId=38
+Jun 23, 2026 11:20:52 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=38
+Jun 23, 2026 11:20:53 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=20, price=500.0
+Jun 23, 2026 11:20:53 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 11:20:53 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:20:53 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:21:05 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 38
+Jun 23, 2026 11:21:09 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=38, qty=20, price=500.0, supplier=ranil, status=0
+Jun 23, 2026 11:21:09 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=38
+Jun 23, 2026 11:21:11 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 11:21:11 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=20, price=500.0
+Jun 23, 2026 11:21:11 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:21:11 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:21:14 PM lk.LMS.com.gui.panel.productCard jButton1ActionPerformed
+INFO: Opening updateProduct dialog for productId: 38
+Jun 23, 2026 11:21:20 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Saving product update: productId=38, qty=20, price=500.0, supplier=ranil, status=1
+Jun 23, 2026 11:21:20 PM lk.LMS.com.gui.dialog.updateProduct saveProduct
+INFO: Product updated successfully: productId=38
+Jun 23, 2026 11:21:21 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=20, price=500.0
+Jun 23, 2026 11:21:21 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 11:21:21 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:21:21 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:21:36 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:21:36 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:21:38 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:26:25 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:26:25 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:26:25 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 23, 2026 11:26:25 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 23, 2026 11:26:47 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=17, price=500.0
+Jun 23, 2026 11:26:47 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 23, 2026 11:26:57 PM lk.LMS.com.gui.HomeScreen generatePurchaseHistoryReport
+INFO: Purchase history report generated successfully.
+Jun 26, 2026 10:40:15 AM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=17, price=500.0
+Jun 26, 2026 10:40:15 AM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 26, 2026 10:40:15 AM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 26, 2026 10:40:15 AM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0
+Jun 27, 2026 8:25:24 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=38, name=chunky choc, qty=17, price=500.0
+Jun 27, 2026 8:25:24 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=10, name=ole, qty=47, price=500.0
+Jun 27, 2026 8:25:24 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=37, name=Strabury Ice cream, qty=24, price=750.0
+Jun 27, 2026 8:25:24 PM lk.LMS.com.gui.panel.productCard setData
+INFO: Setting productCard data: id=16, name=EGB, qty=98, price=150.0

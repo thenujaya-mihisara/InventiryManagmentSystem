@@ -4,6 +4,9 @@
  */
 package lk.LMS.com.gui.dialog;
 
+import java.awt.Color;
+import java.awt.Cursor;
+import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import lk.LMS.com.gui.connection.Mysql;
 import java.sql.ResultSet;
@@ -34,17 +37,30 @@ public class BuyNow extends javax.swing.JDialog {
 
         logger.info("Opening BuyNow dialog for productId: " + productId);
 
-        bname.setText("Product: " + productName);
+        applyModernUi();
+        bname.setText(productName);
         bprice.setText("Price: Rs. " + price);
-        bqty.setText("Available: " + qty);
+        bqty.setText("Available stock: " + qty);
 
-        Spinnerqty.setModel(new javax.swing.SpinnerNumberModel(1, 1, qty, 1));
+        if (qty > 0) {
+            Spinnerqty.setModel(new javax.swing.SpinnerNumberModel(1, 1, qty, 1));
+            updateBuyButtonTotal();
+        } else {
+            Spinnerqty.setModel(new javax.swing.SpinnerNumberModel(0, 0, 0, 1));
+            buy.setEnabled(false);
+            buy.setText("Out of Stock");
+        }
+        Spinnerqty.addChangeListener(evt -> updateBuyButtonTotal());
     }
 
     public void buyProduct() {
 
         try {
             int buyQty = (Integer) Spinnerqty.getValue(); // spinnerQty = user input
+            if (buyQty <= 0) {
+                JOptionPane.showMessageDialog(this, "Please select at least one item.");
+                return;
+            }
             if (buyQty > availableQty) {
                 JOptionPane.showMessageDialog(this, "Not enough stock available.");
                 return;
@@ -89,6 +105,7 @@ public class BuyNow extends javax.swing.JDialog {
             logger.info("Purchase completed for productId: " + productId + ", qty: " + buyQty);
             if (homeScreen != null) {
                 homeScreen.loadproductcard();
+                homeScreen.loadPurchaseHistory();
             }
             this.dispose(); 
 
@@ -97,6 +114,56 @@ public class BuyNow extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
             logger.severe("Error while purchasing productId: " + productId + " - " + e.getMessage());
         }
+    }
+
+    private void applyModernUi() {
+        Color background = new Color(248, 250, 252);
+        Color text = new Color(15, 23, 42);
+        Color mutedText = new Color(71, 85, 105);
+        Color primary = new Color(37, 99, 235);
+        Color border = new Color(203, 213, 225);
+
+        jPanel1.setBackground(background);
+        jPanel1.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(border),
+                BorderFactory.createEmptyBorder(18, 20, 18, 20)));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 28));
+        jLabel1.setForeground(text);
+        bname.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 20));
+        bname.setForeground(text);
+        bprice.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 16));
+        bprice.setForeground(mutedText);
+        bqty.setFont(new java.awt.Font("Segoe UI", java.awt.Font.PLAIN, 16));
+        bqty.setForeground(mutedText);
+
+        Spinnerqty.setFont(new java.awt.Font("Segoe UI", java.awt.Font.BOLD, 18));
+        Spinnerqty.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(border),
+                BorderFactory.createEmptyBorder(6, 8, 6, 8)));
+
+        jSeparator1.setForeground(border);
+        jSeparator1.setBackground(border);
+
+        styleButton(buy, primary, Color.WHITE);
+        styleButton(cancel, Color.WHITE, mutedText);
+        cancel.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(border),
+                BorderFactory.createEmptyBorder(8, 14, 8, 14)));
+    }
+
+    private void styleButton(javax.swing.JButton button, Color background, Color foreground) {
+        button.setBackground(background);
+        button.setForeground(foreground);
+        button.setFocusPainted(false);
+        button.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+        button.setBorder(BorderFactory.createEmptyBorder(9, 16, 9, 16));
+    }
+
+    private void updateBuyButtonTotal() {
+        int buyQty = (Integer) Spinnerqty.getValue();
+        double total = buyQty * productPrice;
+        buy.setText("Buy - Rs. " + String.format("%.2f", total));
     }
 
     @SuppressWarnings("unchecked")
@@ -113,7 +180,7 @@ public class BuyNow extends javax.swing.JDialog {
         cancel = new javax.swing.JButton();
         buy = new javax.swing.JButton();
 
-        setUndecorated(true);
+        setUndecorated(false);
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 102));
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
